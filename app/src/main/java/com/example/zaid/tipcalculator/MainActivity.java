@@ -2,7 +2,6 @@ package com.example.zaid.tipcalculator;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.health.PackageHealthStats;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
@@ -61,6 +60,7 @@ public class MainActivity extends AppCompatActivity
         Intent myIntent = new Intent (this, DataActivity.class);
         updateObject();
         this.startActivity(myIntent);
+        overridePendingTransition( R.anim.slide_from_right, 0 );
     }
 
 }

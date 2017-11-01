@@ -45,6 +45,7 @@
         android:layout_alignTop="@id/labelTip"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="10dp"
+        android:textSize="25dp"
         android:id="@+id/tip"
         />
 
@@ -66,6 +67,7 @@
         android:layout_alignTop="@id/labelTotalTip"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="15dp"
+        android:textSize="25dp"
         android:id="@+id/totalTip"
         />
 
@@ -87,6 +89,7 @@
         android:layout_alignTop="@id/labelTotal"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="15dp"
+        android:textSize="25dp"
         android:id="@+id/Total"
         />
 
@@ -97,7 +100,7 @@
         android:layout_below="@id/labelTip"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="250dp"
-        android:text="Submit"
+        android:text="Edit"
         android:textSize="25dp"
         />
 

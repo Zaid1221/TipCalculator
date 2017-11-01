@@ -25,6 +25,7 @@
         android:layout_alignTop="@id/labelBill"
         android:layout_marginLeft="50dp"
         android:hint="Enter Bill Amount"
+        android:inputType="numberDecimal"
         android:textSize="25dp"
         />
 
@@ -75,7 +76,7 @@
         android:layout_below="@id/labelTip"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="250dp"
-        android:text="Submit"
+        android:text="Calculate"
         android:textSize="25dp"
         />
 

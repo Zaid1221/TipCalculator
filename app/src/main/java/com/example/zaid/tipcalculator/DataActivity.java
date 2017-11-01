@@ -30,18 +30,22 @@ public class DataActivity extends AppCompatActivity
         Bill.setText(s);
 
         Tip = (TextView) findViewById(R.id.tip);
-        Tip.setText(tipCalc.getTip());
+        s = Float.toString((tipCalc.getTip()));
+        Tip.setText(s + "%");
 
         totalTip = (TextView) findViewById(R.id.totalTip);
-        totalTip.setText(tipCalc.tipAmount());
+        s = Float.toString(tipCalc.tipAmount());
+        totalTip.setText(s);
 
         Total = (TextView) findViewById(R.id.Total);
-        Total.setText(tipCalc.totalAmount());
+        s = Float.toString(tipCalc.totalAmount());
+        Total.setText(s);
     }
 
     public void editScreen()
     {
         this.finish();
+        overridePendingTransition( R.anim.slide_from_left, 0 );
     }
 
 }
