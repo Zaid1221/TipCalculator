@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zaid.tipcalculator.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelBill"
+        android:text="Bill"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="40dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/billAmount"
+        android:layout_toRightOf="@id/labelBill"
+        android:layout_alignTop="@id/labelBill"
+        android:layout_marginLeft="50dp"
+        android:hint="Enter Bill Amount"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelTip"
+        android:layout_below="@id/labelBill"
+        android:layout_alignLeft="@id/labelBill"
+        android:textSize="40dp"
+        android:text="Tip"
+        android:layout_marginTop="30dp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/labelTip"
+        android:layout_alignTop="@id/labelTip"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ten"
+            android:text="10" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fifteen"
+            android:text="15"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirty"
+            android:checked="true"
+            android:text="30" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewScreen"
+        android:layout_below="@id/labelTip"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="250dp"
+        android:text="Submit"
+        android:textSize="25dp"
+        />
+
+    </RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zaid.tipcalculator.DataActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelBill"
+        android:text="Bill"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/billAmount"
+        android:layout_toRightOf="@id/labelBill"
+        android:layout_alignTop="@id/labelBill"
+        android:layout_marginLeft="50dp"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelTip"
+        android:layout_below="@id/labelBill"
+        android:layout_alignLeft="@id/labelBill"
+        android:textSize="40dp"
+        android:text="Tip"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/labelTip"
+        android:layout_alignTop="@id/labelTip"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tip"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelTip"
+        android:layout_alignLeft="@id/labelTip"
+        android:layout_marginTop="30dp"
+        android:text="Total Tip"
+        android:textSize="40dp"
+        android:id="@+id/labelTotalTip"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/labelTotalTip"
+        android:layout_alignTop="@id/labelTotalTip"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/totalTip"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelTotalTip"
+        android:layout_alignLeft="@id/labelTotalTip"
+        android:layout_marginTop="30dp"
+        android:text="Total"
+        android:textSize="40dp"
+        android:id="@+id/labelTotal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/labelTotal"
+        android:layout_alignTop="@id/labelTotal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/Total"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="editScreen"
+        android:layout_below="@id/labelTip"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="250dp"
+        android:text="Submit"
+        android:textSize="25dp"
+        />
+
+</RelativeLayout>
